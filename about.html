@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial scale=1.0">
+        <title>
+            About Us | Decalidad
+        </title>
+        <link rel="stylesheet" href="style.css">
+        <style>
+        body{
+            background-image: url('ads/bg4.png');
+        }
+        </style>
+    </head>
+
+    <body>
+        <div class="container">
+            <div class="navbar">
+                <img src="logo/logo1.png" class="logo">
+                <nav>
+                    <ul id="menuList">
+                        <li> <a href="index.html"> Home </a> </li>
+                        <li> <a href="about.html"> About </a> </li>
+                        <li> <a href="collections.html"> Collections </a> </li>
+                        <li> <a href="commissions.html"> Commissions </a> </li>
+                        <li> <a href="contact.html"> Contact </a> </li>
+                    </ul>
+                </nav>
+                <img src="logo/menu.png" class="menu-icon" onclick="togglemenu()">       
+             </div>
+        </div>
+
+        <div class="about">
+            <p> <img src="ads/ad1.png"> </p>
+            <br> <br>
+        </div>
+
+        <script>
+            var menuList = document.getElementById("menuList");
+    
+            menuList.style.maxHeight= "0px";
+            function togglemenu(){
+    
+            if (menuList.style.maxHeight == "0px")
+                {
+                    menuList.style.maxHeight= "130px";
+                }
+            else
+                {
+                    menuList.style.maxHeight = "0px";
+                }
+        
+            }
+        </script>
+    </body>
+</html>

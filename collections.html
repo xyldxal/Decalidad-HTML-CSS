@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial scale=1.0">
+        <title>
+            Collections | Decalidad
+        </title>
+        <link rel="stylesheet" href="style.css">
+        <style>
+            body{
+                background-image: url('ads/bg2.png');
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="container">
+            <div class="navbar">
+                <img src="logo/logo1.png" class="logo">
+                <nav>
+                    <ul id="menuList">
+                        <li> <a href="index.html"> Home </a> </li>
+                        <li> <a href="about.html"> About </a> </li>
+                        <li> <a href="collections.html"> Collections </a> </li>
+                        <li> <a href="commissions.html"> Commissions </a> </li>
+                        <li> <a href="contact.html"> Contact </a> </li>
+                    </ul>
+                </nav>
+                <img src="logo/menu.png" class="menu-icon" onclick="togglemenu()">       
+             </div>
+        </div>
+
+        <div class="collections">
+            <div class="forText">
+                <h2> COLLECTIONS </h2>
+                <div class="textbox1">
+                    <p>Artworks created by our own artists and graphic designers.</p>
+                </div>
+            </div>
+        </div>
+
+        <br> <br>
+
+        <div class="picrow1">
+            <div class="piccol1">
+               <a href="animec.html"><img src="ads/cata1.png" style="width: 100%"> </a> 
+            </div>
+
+            <div class="piccol1">
+                <a href="cartoonc.html"> <img src="ads/cata2.png" style="width:100%"> </a>
+            </div>
+
+            <div class="piccol1">
+                <a href="gamingc.html"> <img src="ads/cata3.png" style="width:100%"> </a>
+            </div>
+
+            <div class="piccol1">
+                <a href="kpopc.html"> <img src="ads/cata4.png" style="width:100%"> </a>
+            </div>
+
+            <div class="piccol1">
+                <a href="miscc.html"> <img src="ads/cata5.png" style="width:100%"> </a>
+            </div>
+        </div>
+
+        <br> <br>
+        <div class="collections">
+            <div class="forText">
+               <h2> PRICES </h2>
+               </div>
+           </div>
+       </div>
+
+       <div class="picrow2">
+           <div class="piccol2">
+               <img src="ads/st1.png" style="width:100%">
+            </div>
+
+            <div class="piccol2">
+               <img src="ads/bp1.png" style="width: 100%">
+           </div>
+       </div>
+
+       <script>
+        var menuList = document.getElementById("menuList");
+
+        menuList.style.maxHeight= "0px";
+        function togglemenu(){
+
+        if (menuList.style.maxHeight == "0px")
+            {
+                menuList.style.maxHeight= "130px";
+            }
+        else
+            {
+                menuList.style.maxHeight = "0px";
+            }
+    
+        }
+    </script>
+    </body>
+</html>
