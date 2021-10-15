@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial scale=1.0">
+        <title>
+            Gaming Collection | Decalidad
+        </title>
+        <link rel="stylesheet" href="style.css">
+        <style>
+            body{
+                background-image: url('ads/bg9.png');
+            }
+            </style>
+    </head>
+
+    <body>
+        <div class="container">
+            <div class="navbar">
+                <img src="logo/logo1.png" class="logo">
+                <nav>
+                    <ul id="menuList">
+                        <li> <a href="index.html"> Home </a> </li>
+                        <li> <a href="about.html"> About </a> </li>
+                        <li> <a href="collections.html"> Collections </a> </li>
+                        <li> <a href="commissions.html"> Commissions </a> </li>
+                        <li> <a href="contact.html"> Contact </a> </li>
+                    </ul>
+                </nav>
+                <img src="logo/menu.png" class="menu-icon" onclick="togglemenu()">       
+             </div>
+        </div>
+
+        <div class="collections">
+            <div class="forText">
+                <h2> GAMING COLLECTION </h2>
+            </div>
+        </div>
+
+        <br>
+        <center> <a href="collections.html"> <button type ="button"> BUY NOW <img src="arrow.png"> </button> </a>
+        </center>
+        <br>
+
+        <div class="picrow11">
+            <div class="piccol11">
+                <img src="stickers/g1.png" style="width: 100%">
+            </div>
+
+            <div class="piccol11">
+                <img src="stickers/g2.png" style="width:100%">
+            </div>
+
+            <div class="piccol11">
+                <img src="stickers/g3.png" style="width:100%">
+            </div>
+
+            <div class="piccol11">
+                <img src="stickers/g4.png" style="width:100%">
+            </div>
+        </div>
+
+        <script>
+            var menuList = document.getElementById("menuList");
+    
+            menuList.style.maxHeight= "0px";
+            function togglemenu(){
+    
+            if (menuList.style.maxHeight == "0px")
+                {
+                    menuList.style.maxHeight= "130px";
+                }
+            else
+                {
+                    menuList.style.maxHeight = "0px";
+                }
+        
+            }
+        </script>
+    </body>
+</html>

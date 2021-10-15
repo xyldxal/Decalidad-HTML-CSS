@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial scale=1.0">
+        <title>
+            Decalidad
+        </title>
+        <link rel="stylesheet" href="style.css">
+        <style>
+            body{
+                background-image: url('ads/bg3.png');
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="container">
+            <div class="navbar">
+                <img src="logo/logo1.png" class="logo">
+                <nav>
+                    <ul id="menuList">
+                        <li> <a href="index.html"> Home </a> </li>
+                        <li> <a href="about.html"> About </a> </li>
+                        <li> <a href="collections.html"> Collections </a> </li>
+                        <li> <a href="commissions.html"> Commissions </a> </li>
+                        <li> <a href="contact.html"> Contact </a> </li>
+                    </ul>
+                </nav>
+                <img src="logo/menu.png" class="menu-icon" onclick="togglemenu()">       
+             </div>
+        </div>
+
+        <div class="row">
+            <div class="col-1">
+                <h2> DECALIDAD </h2>
+                <p> est. 2020</p>
+                <a href="collections.html"> <button class="indb" type ="button"> View our designs <img src="arrow.png" class="indb"> </button> </a>
+            </div>
+
+            <div class="col-2">
+                <video autoplay muted loop>
+                    <source src="cover.mp4" type="video/mp4">
+                </video>
+                <div class="color-box">
+                </div>
+            </div>
+        </div>
+
+        <div class="social-media">
+           <a href=https://www.facebook.com/decalidad.designs> <img src="logo/fb.png"> </a>
+           <a href="https://twitter.com/decalidad_ict"> <img src="logo/twt.png"> </a>
+           <a href="https://www.instagram.com/decalidad.designs"> <img src="logo/ig.png"> </a>
+           <a href="https://www.shopee.ph/decalidad.designs"> <img src="logo/shp.png"> </a>
+        </div>
+
+        <br>
+
+    <script>
+        var menuList = document.getElementById("menuList");
+
+        menuList.style.maxHeight= "0px";
+        function togglemenu(){
+
+        if (menuList.style.maxHeight == "0px")
+            {
+                menuList.style.maxHeight= "130px";
+            }
+        else
+            {
+                menuList.style.maxHeight = "0px";
+            }
+    
+        }
+    </script>
+    </body>
+
+</html>

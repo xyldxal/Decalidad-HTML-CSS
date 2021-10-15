@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial scale=1.0">
+        <title>
+            Contact | Decalidad
+        </title>
+        <link rel="stylesheet" href="style.css">
+        <style>
+            body{
+                background-image: url('ads/bg6.png');
+            }
+            </style>
+    </head>
+
+    <body>
+        <div class="container">
+            <div class="navbar">
+                <img src="logo/logo1.png" class="logo">
+                <nav>
+                    <ul id="menuList">
+                        <li> <a href="index.html"> Home </a> </li>
+                        <li> <a href="about.html"> About </a> </li>
+                        <li> <a href="collections.html"> Collections </a> </li>
+                        <li> <a href="commissions.html"> Commissions </a> </li>
+                        <li> <a href="contact.html"> Contact </a> </li>
+                    </ul>
+                </nav>
+                <img src="logo/menu.png" class="menu-icon" onclick="togglemenu()">       
+             </div>
+        </div>
+
+        <div class="collections">
+            <div class="forText">
+                <h2> CONTACT </h2>  
+            </div>
+        </div>
+        <br> <br>
+        <div class="picrow15">
+            <a href=https://www.facebook.com/decalidad.designs> <img src="logo/fb2.png"> </a>
+            <a href="https://twitter.com/decalidad_ict"> <img src="logo/twt2.png"> </a>
+            <a href="https://www.instagram.com/decalidad.designs"> <img src="logo/ig2.png"> </a>
+            <a href="https://www.shopee.ph/decalidad.designs"> <img src="logo/shp2.png"> </a>
+            <a href="mailto:decalidad.designs@gmail.com"> <img src="logo/mail.png">
+        </div>
+        
+        <script>
+            var menuList = document.getElementById("menuList");
+    
+            menuList.style.maxHeight= "0px";
+            function togglemenu(){
+    
+            if (menuList.style.maxHeight == "0px")
+                {
+                    menuList.style.maxHeight= "130px";
+                }
+            else
+                {
+                    menuList.style.maxHeight = "0px";
+                }
+        
+            }
+        </script>
+    </body>
+</html>

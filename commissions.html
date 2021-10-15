@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial scale=1.0">
+        <title>
+            Commissions | Decalidad
+        </title>
+        <link rel="stylesheet" href="style.css">
+        <style>
+            body{
+            background-image: url('ads/bg5.png');
+            }
+
+            input[type=text], select {
+              width: 75%;
+              padding: 12px 20px;
+              margin: 8px 0;
+              display: inline-block;
+              border: 1px solid #ccc;
+              border-radius: 4px;
+              box-sizing: border-box;
+              font-family: Arial, Helvetica, sans-serif;
+            }
+            
+            input[type=submit] {
+              width: 75%;
+              background-color: #ff942e;
+              color: #000000;
+              padding: 14px 20px;
+              margin: 8px 0;
+              border: none;
+              border-radius: 4px;
+              cursor: pointer;
+              font-family: Tofino;
+
+            }
+            
+            input[type=submit]:hover {
+              background-color: #ed8a2b;
+            }
+
+            .flexform{
+                margin: 70px 100px 100px;
+                font-family: Arial, Helvetica, sans-serif;
+                display: flex;
+            }
+
+            .formrequest{
+                flex-basis: 70%;
+            }
+
+            .imgform{
+                flex-basis:30%;
+                filter: drop-shadow(0.35rem 0.35rem 0.4rem rgba(0, 0, 0, 0.5));
+            }
+            </style>
+    </head>
+
+    <body>
+        <div class="container">
+            <div class="navbar">
+                <img src="logo/logo1.png" class="logo">
+                <nav>
+                    <ul id="menuList">
+                        <li> <a href="index.html"> Home </a> </li>
+                        <li> <a href="about.html"> About </a> </li>
+                        <li> <a href="collections.html"> Collections </a> </li>
+                        <li> <a href="commissions.html"> Commissions </a> </li>
+                        <li> <a href="contact.html"> Contact </a> </li>
+                    </ul>
+                </nav>
+                <img src="logo/menu.png" class="menu-icon" onclick="togglemenu()">       
+             </div>
+        </div>
+
+        <div class="collections">
+            <div class="forText">
+                <h2> COMMISSIONS </h2>
+                <div class="textbox1">
+                    <p>Got anything you like but it's not on our collections? <br>
+                    Hit us up and we'll see if we can do the job!</p> </div>
+            </div>
+        </div>
+
+        <div class="flexform">
+            <div class="formrequest">
+            <form action="/action_page.php">
+              <label for="name">Name</label> <br>
+              <input type="text" id="name" name="name" placeholder="Your name..">
+              <br>
+              <label for="address">Address</label>
+              <br>
+              <input type="text" id="addr" name="address" placeholder="Your address..">
+              <br>
+              <label for="email">E-mail Address</label>
+              <br>
+              <input type="text" id="email" name="email" placeholder="Your e-mail..">
+              <br>
+              <label for="request">Request</label>
+              <br>
+              <select id="request" name="request">
+                <option value="reference">Reference Pictures</option>
+                <option value="graphicd">Graphic Design</option>
+                <option value="customd">Custom Drawings</option>
+              </select>
+            
+              <input type="submit" value="Submit">
+            </form>
+            </div>
+            
+            <div class="imgform">
+                <a href="https://shopee.ph/product/348409631/5669952495/"> <img src="ads/comms.png" style="height:375px"> </a>
+            </div>
+          </div>
+
+          <script>
+            var menuList = document.getElementById("menuList");
+    
+            menuList.style.maxHeight= "0px";
+            function togglemenu(){
+    
+            if (menuList.style.maxHeight == "0px")
+                {
+                    menuList.style.maxHeight= "130px";
+                }
+            else
+                {
+                    menuList.style.maxHeight = "0px";
+                }
+        
+            }
+        </script>
+        </body>
+    </html>
