@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial scale=1.0">
+        <title>
+            Commissions | Decalidad
+        </title>
+        <link rel="stylesheet" href="style.css">
+        <style>
+            body{
+            background-image: url('ads/bg5.png');
+            }
+
+            input[type=text], input[type=email], select {
+              width: 75%;
+              padding: 12px 20px;
+              margin: 8px 0;
+              display: inline-block;
+              border: 1px solid #ccc;
+              border-radius: 4px;
+              box-sizing: border-box;
+              font-family: Arial, Helvetica, sans-serif;
+            }
+            
+            #form_alert{
+              font-size: 14px;  
+              width: 70%;
+              color: #043827;
+              padding: 14px 20px;
+              margin: 8px 0;
+              border: none;
+              border-radius: 4px;
+              font-family: Tofino;
+            }
+            .submit {
+              width: 75%;
+              background-color: #ff942e;
+              color: #000000;
+              padding: 14px 20px;
+              margin: 8px 0;
+              border: none;
+              border-radius: 4px;
+              cursor: pointer;
+              font-family: Tofino;
+            }
+
+            textarea{
+              width: 75%;
+              height: 100px;
+            }
+            
+            .submit:hover {
+              background-color: #ed8a2b;
+              width: 75%;
+              
+            }
+
+            .flexform{
+                margin: 70px 100px 100px;
+                font-family: Arial, Helvetica, sans-serif;
+                display: flex;
+            }
+
+            .formrequest{
+                flex-basis: 70%;
+            }
+
+            .imgform{
+                flex-basis:30%;
+                filter: drop-shadow(0.35rem 0.35rem 0.4rem rgba(0, 0, 0, 0.5));
+            }
+            </style>
+
+            <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"></script>
+            
+            <script>
+                var menuList = document.getElementById("menuList");
+        
+                menuList.style.maxHeight= "0px";
+                function togglemenu(){
+        
+                if (menuList.style.maxHeight == "0px")
+                    {
+                        menuList.style.maxHeight= "130px";
+                    }
+                else
+                    {
+                        menuList.style.maxHeight = "0px";
+                    }
+                }
+    
+                function repBadWords () {
+                    const textarea = document.getElementById('comments');
+                    const name = document.getElementById('name');
+                    const address = document.getElementById('addr');
+                    const email = document.getElementById('email');
+
+                    let badwords = /a55|ar5e|arrse|ass-fucker|asses|assfucker|assfukka|asshole|assholes|asswhole|a_s_s|b!tch|b00bs|b17ch|b1tch|ballbag|balls|ballsack|bastard|beastial|beastiality|bellend|bestial|bestiality|bi+ch|biatch|bitch|bitcher|bitchers|bitches|bitchin|bitching|bloody|blowjob|blowjob|blowjobs|boiolas|bollock|bollok|boner|boob|boobs|booobs|boooobs|booooobs|booooooobs|breasts|buceta|bugger|bum|bunnyfucker|butt|butthole|buttmunch|buttplug|c0ck|c0cksucker|carpetmuncher|cawk|chink|cipa|cl1t|clit|clitoris|clits|cnut|cock|cock-sucker|cockface|cockhead|cockmunch|cockmuncher|cocks|cocksuck|cocksucked|cocksucker|cocksucking|cocksucks|cocksuka|cocksukka|cok|cokmuncher|coksucka|coon|cox|crap|cum|cummer|cumming|cums|cumshot|cunilingus|cunillingus|cunnilingus|cunt|cuntlick|cuntlicker|cuntlicking|cunts|cyalis|cyberfuc|cyberfuck|cyberfucked|cyberfucker|cyberfuckers|cyberfucking|d1ck|damn|dick|dickhead|dildo|dildos|dink|dinks|dirsa|dlck|dog-fucker|doggin|dogging|donkeyribber|doosh|duche|dyke|ejaculate|ejaculated|ejaculates|ejaculating|ejaculatings|ejaculation|ejakulate|fuck|fucker|f4nny|fag|fagging|faggitt|faggot|faggs|fagot|fagots|fags|fanny|fannyflaps|fannyfucker|fanyy|fatass|fcuk|fcuker|fcuking|feck|fecker|felching|fellate|fellatio|fingerfuck|fingerfucked|fingerfucker|fingerfuckers|fingerfucking|fingerfucks|fistfuck|fistfucked|fistfucker|fistfuckers|fistfucking|fistfuckings|fistfucks|flange|fook|fooker|fuck|fucka|fucked|fucker|fuckers|fuckhead|fuckheads|fuckin|fucking|fuckings|fuckingshitmotherfucker|fuckme|fucks|fuckwhit|fuckwit|fudgepacker|fudgepacker|fuk|fuker|fukker|fukkin|fuks|fukwhit|fukwit|fux|fux0r|f_u_c_k|gangbang|gangbanged|gangbangs|gaylord|gaysex|goatse|God|god-dam|god-damned|goddamn|goddamned|hardcoresex|hell|heshe|hoar|hoare|hoerhore|horniest|hotsex|jack-off|jackoff|jap|jerk-off|jism|jiz|jizm|jizz|kawk|knobhead|knobjocky|knobjokey|kock|kondum|kondums|kummer|kumming|kunilingus|l3i+ch|l3itch|labia|lmfao|lust|lusting|m0f0|m0fo|m45terbate|ma5terb8|ma5terbate|masochist|master-bate|masterb8|masterbat*|masterbat3|masterbate|masterbation|masterbations|masturbate|mo-fo|mof0|mofo|mothafuck|mothafucka|mothafuckas|mothafuckaz|mothafucked|mothafucker|mothafuckers|mothafuckin|mothafucking|mothafuckings|mothafucks|motherfucker|motherfuck|motherfucked|motherfucker|motherfuckers|motherfuckin|motherfucking|motherfuckings|motherfuckka|motherfucks|muff|mutha|muthafecker|muthafuckker|muther|mutherfucker|n1gga|n1gger|nazi|nigg3r|nigg4h|nigga|niggah|niggas|niggaz|nigger|niggers|nob|nobjokey|nobhead|nobjocky|nobjokey|numbnuts|nutsack|orgasim|orgasims|orgasm|orgasms|p0rn|pawn|pecker|penis|penisfucker|phonesex|phuck|phuk|phuked|phuking|phukked|phukking|phuks|phuq|pigfucker|pimpis|piss|pissed|pisser|pissers|pisses|pissflaps|pissin|pissing|pissoff|poop|porn|porno|pornography|pornos|prick|pricks|pron|pube|pusse|pussi|pussies|pussy|pussys|rectum|retard|rimjaw|rimming|shit|s.o.b.|sadist|schlong|screwing|scroat|scrote|scrotum|semen|sex|sh!+|sh!t|sh1t|shag|shagger|shaggin|shagging|shemale|shi+|shit|shitdick|shite|shited|shitey|shitfuck|shitfull|shithead|shiting|shitings|shits|shitted|shitter|shitters|shitting|shittings|shitty|skank|slut|sluts|smegma|smut|snatch|son-of-a-bitch|spac|spunk|s_h_i_t|t1tt1e5|t1tties|teets|teez|tittie5|tittiefucker|tittyfuck|tittywank|titwank|tosser|turd|tw4t|twathead|twatty|twunt|twunter|v14gra|v1gra|vagina|viagra|vulva|w00se|wang|wank|wanker|wanky|whoar|whore|xrated|xxx|gago|amputa|bilat|binibrocha|bobo|bogo|boto|brocha|burat|bwesit|bwisit|demonyo ka|engot|etits|gaga|gagi|habal|hayup|hinampak|hinayupak|hindot|hindutan|hudas|iniyot|inutel|inutil|iyot|kagaguhan|kagang|kantot|kantotan|kantut|kantutan|kaululan|kayat|kiki|kikinginamo|kingina|kupal|leche|leching|lechugas|lintik|nakakaburat|nimal|ogag|olok|pakingshet|pakshet|pakyu|yawa|pokpok|poyet|puchanggala|puyet|ratbu|shunga|siraulo|siraulo|tae|taena|tamod|tanga|tangina|tarantado|teti|timang|tinil|tungaw|puke|pucha|puchangina|pukinangina|puking|punyeta|puta|putang|putang ina|putangina|putanginamo|putaragis|putragis|suso|susu|taragis|titi|tite|ulol|ungas/gi;
+    
+                    let comments1 = textarea.value;
+                    let comments2 = comments1.replace(badwords,'*****');
+                    document.getElementById('comments').value = comments2;
+
+                    let name1 = name.value;
+                    let name2 = name1.replace(badwords, "*****");
+                    document.getElementById('name').value = name2;
+
+                    let address1 = address.value;
+                    let address2 = address1.replace(badwords, "*****");
+                    document.getElementById('addr').value = address2;
+
+                    let email1 = email.value;
+                    let email2 = email1.replace(badwords, "*****");
+                    document.getElementById('email').value = email2;
+                }
+            </script>
+    </head>
+
+    <body>
+        <div class="container">
+            <div class="navbar">
+                <img src="logo/logo1.png" class="logo">
+                <nav>
+                    <ul id="menuList">
+                        <li> <a href="index.html"> Home </a> </li>
+                        <li> <a href="about.html"> About </a> </li>
+                        <li> <a href="collections.html"> Collections </a> </li>
+                        <li> <a href="commissions.html"> Commissions </a> </li>
+                        <li> <a href="contact.html"> Contact </a> </li>
+                    </ul>
+                </nav>
+                <img src="logo/menu.png" class="menu-icon" onclick="togglemenu()">       
+             </div>
+        </div>
+
+        <div class="collections">
+            <div class="forText">
+                <h2> COMMISSIONS </h2>
+                <div class="textbox1">
+                    <p>Got anything you like but it's not on our collections? <br>
+                    Hit us up and we'll see if we can do the job!</p> </div>
+            </div>
+        </div>
+
+        <div class="flexform">
+            <div class="formrequest">
+            <form name="commsform">  
+              <label for="name">Name</label> <br>
+              <input type="text" id="name" name="name" placeholder="Your name.." onkeyup='repBadWords()' required>
+              <br>
+              <label for="address">Address</label>
+              <br>
+              <input type="text" id="addr" name="addr" placeholder="Your address.." onkeyup='repBadWords()'>
+              <br>
+              <label for="email">E-mail Address</label>
+              <br>
+              <input type="email" id="email" name="email" placeholder="Your e-mail.." onkeyup='repBadWords()' required>
+              <br>
+              <label for="request">Request</label>
+              <br>
+              <select id="request" name="request" required>
+                <option value="Reference Pictures">Reference Pictures</option>
+                <option value="Graphic Design">Graphic Design</option>
+                <option value="Custom Drawings">Custom Drawings</option>
+              </select> <br>
+              <label for="comments">Additional Comments:</label> <br>
+              <input type="text" id="comments" name="comments" placeholder="Something else you would like to say?" onkeyup='repBadWords()'>
+              <button type="submit" class="submit">Submit</button>
+              <br>
+              <div id="form_alert"> </div>
+            </form>
+
+            </div>
+            
+            <div class="imgform">
+                <a href="https://shopee.ph/product/348409631/5669952495/"> <img src="ads/comms.png" style="height:375px"> </a>
+            </div>
+          </div>
+
+
+        </body>
+
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"></script>
+
+        <script>
+            function submissionSuccess() {
+                alert("Message submitted successfully!");
+            }
+
+            function submissionFailure() {
+                alert("Message failed to send, please try again!");
+            }
+
+            const scriptURL = 'https://script.google.com/macros/s/AKfycbwCITlzxEA5axGFAq9RnRFZeeC0pJ82Yb9sYqQ-DTLzOgAa71CdWsK1WxeK7ZP2yKr1Aw/exec'
+            const form = document.forms['commsform']
+            form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+                .then(response => submissionSuccess())
+                .catch(error => submissionFailure())
+                .then(() => {window.location.reload()
+        })
+    })          
+    
+        </script>
+    </html>
